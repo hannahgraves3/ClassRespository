@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-layout-container{
+            display: grid;
+            grid-template-columns: repeat(3, minmax(200px, 1fr));
+            gap: 25px;
+            padding: 25px;
+        }
+        .card-layout{
+            background-color: rgb(94, 112, 112);
+            border-radius: 5px;
+            box-sizing: border-box;
+            height: 100%;
+            padding: 10px;
+        
+        }
+        #card-layout-grid .in-box-text{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        card-layout-float .in-box-text{
+            float: left;
+        }
+        #card-layout-flex-even{
+            background-color: rgb(117, 155, 155);
+            border-radius: 5px;   
+        }
+    .in-box-text{
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .in-box-text:hover{
+        opacity: 1;
+        transition: .5s;
+        color: #ffffff;
+        font-size: 16px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+       /*___________MEDIA QUERY BELOW________________________*/
+ @media (max-width: 768px) {
+      .grid-layout-container {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+      }
+    }
+
+    @media (max-width: 480px) {
+      .grid-layout-container {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+
+      }
+    }
+    /*________________________MEDIA QUERY ABOVE________________________*/
+
+    </style>
+</head>
+<body>
+    <div class="grid-layout-container">
+        <div class="card-layout"> 
+            <div class="in-box-text">
+                <p>This is a Card made with box layout</p>
+            </div>
+        </div>
+        
+        <div class="card-layout" id="card-layout-grid"> 
+            <div class="in-box-text">
+                <p>grid 1</p>
+                <p>grid 2</p>
+            </div>
+        </div>
+
+        <div class="card-layout" id="card-layout-float"> 
+            <div class="in-box-text">
+                <p>float 1</p>
+                <p>float 2</p>
+            </div>
+        </div>
+        
+        <div class="card-layout" id="card-layout-flex-even"> 
+            <div class="in-box-text">
+                <p>flex spaced evenly 1</p>
+                <p>flex spaced evenly 2</p>
+                <p>flex spaced evenly 3</p>
+            </div>
+        </div>
+        
+        <div class="card-layout">
+            <div class="in-box-text"> 
+                <p>inline block 1</p>
+                <p>inline block 2</p>
+            </div>
+        </div>
+        
+        <div class="card-layout"> 
+            <div class="in-box-text">
+                <p>Centered Text</p>
+            </div>
+        </div>
+        
+        <div class="card-layout"> 
+            <div class="in-box-text">
+                <p>flex column 1</p>
+                <p>flex column 2</p>
+                <p>flex column 3</p>
+            </div>
+        </div>
+
+        <div class="card-layout">
+            <div class="in-box-text"> 
+                <h5>column 1</h5>
+                <p>item 1</p>
+                <h5>column 2</h5>
+                <p>item 2</p>
+                <p>item 3</p>
+            </div>
+        </div>
+
+        <div class="card-layout">
+            <div class="in-box-text"> 
+                <p>random margin 1</p>
+                <p>random margin 2</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
