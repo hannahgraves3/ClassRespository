@@ -10,17 +10,23 @@ body{
     background-color: rgb(89, 93, 95);
 }
 .logo{
-    width: 40px;
-    padding: 7px;
-    margin: 5px;
-    background-color: white;
-    
-    
+    width: 60px;
+    margin-top: 25px;
+    margin-left: 50px;
+    background-color: white;  
 }
 header{
     position: sticky;
     top:0;
     z-index: 1000; 
+    background-color: rgb(255, 255, 255);
+    color: #4E98B0;
+}
+header h4{
+    margin-left: 130px;
+    margin-top: -46px;
+    font-size: 18px;
+    font-weight: 400;
 }
 nav{
     background-color: rgb(255, 255, 255);
@@ -30,15 +36,22 @@ nav{
     display: flex;
     flex-wrap: wrap;
     height: 100%;
-    text-decoration: none;
-    
+    text-decoration: none; 
+    justify-content: flex-end;
+    align-items: center; 
+    margin-top: -25px;
+    padding-bottom: 20px;
+    padding-right: 30px;
 }
 nav a{
     color: #4E98B0;
-    
+    text-decoration: none;
     padding-inline: 10px;
-    display: flex;
-    justify-content: flex-end;
+    margin-left: 10px; 
+	justify-content: center;
+}
+nav a:hover{
+    color: #164352;
 }
 main{
     background-color: rgb(34, 95, 126);
@@ -95,9 +108,70 @@ div{
     border-color: aliceblue;
     
 }
+#quoteOne{
+  background-color: rgb(34, 95, 126);
+    margin-left: 350px;
+    margin-top: -10px;
+    color: white;
+    height: 30px;
+    font-size: 55px;
+    position: absolute;
+    padding: 4px;
+}
+#quoteTwo{
+    background-color: rgb(34, 95, 126);
+    margin-left: 880px;
+    margin-top: -25px;
+    color: white;
+    height: 30px;
+    font-size: 55px;
+    position: absolute;
+    padding: 4px;
+  }
 #quote-block{
     border-width:3px; 
     border-style:solid; 
     border-color:aliceblue; 
-   
+    padding: 27px;
+    margin-left: 270px; 
+    margin-top: 15px;
+    width: 700px;
+}
+#quote-block h5{
+    font-size: 27px;
+    font-weight:300;
+}
+#quote-block-author h5{
+    font-size: 20px;
+    font-weight:300;
+}
+.quote-block-div{
+    display:block;  
+}
+#quote-block-author{
+    border-width:3px; 
+    border-style:solid; 
+    border-color:aliceblue; 
+    padding: 20px;
+    margin-left: 787px; 
+    margin-top: -20px;
+    width: 200px;
+}
+footer{
+    background-color: rgb(255, 255, 255);
+    color: #4E98B0;
+    padding-left: 70px;
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    text-decoration: none;   
+}
+footer h4{
+    padding-top: 13px;
+}
+footer h6{
+    
+    font-weight: 200;
+    font-size: 14px;
 }
